@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomePageViewController.swift
 //  SplitBills
 //
 //  Created by Ayhan on 2017-08-19.
@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
