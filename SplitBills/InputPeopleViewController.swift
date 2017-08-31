@@ -41,5 +41,14 @@ class InputPeopleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if (self.display.text != nil) {
+            appManager.numberOfPeople = Int(self.display.text!)!
+        } else {
+            appManager.numberOfPeople = 0
+        }
+    
+    }
     
 }

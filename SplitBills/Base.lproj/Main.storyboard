@@ -208,6 +208,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OvL-pQ-dil" firstAttribute="top" secondItem="C3f-4f-Gab" secondAttribute="bottom" constant="41" id="1hS-m8-m2c"/>
                             <constraint firstItem="OvL-pQ-dil" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="6" id="1pC-ZB-y8U"/>

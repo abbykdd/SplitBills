@@ -28,6 +28,7 @@ class NameBillViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         let billName = self.billNameTextField.text!
+        appManager.billName = billName
         print(billName)
     }
 
