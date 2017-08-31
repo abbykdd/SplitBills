@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF88B8311F55FB1100EF43C3 /* NameBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88B8301F55FB1100EF43C3 /* NameBillViewController.swift */; };
+		CF88B8331F55FC9800EF43C3 /* InputPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88B8321F55FC9800EF43C3 /* InputPeopleViewController.swift */; };
+		CF88B8351F55FD3300EF43C3 /* InputBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88B8341F55FD3300EF43C3 /* InputBillsViewController.swift */; };
 		CFF0E9A71F48DD7B00770D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0E9A61F48DD7B00770D70 /* AppDelegate.swift */; };
 		CFF0E9A91F48DD7B00770D70 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0E9A81F48DD7B00770D70 /* HomePageViewController.swift */; };
 		CFF0E9AC1F48DD7B00770D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF0E9AA1F48DD7B00770D70 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF88B8301F55FB1100EF43C3 /* NameBillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameBillViewController.swift; sourceTree = "<group>"; };
+		CF88B8321F55FC9800EF43C3 /* InputPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPeopleViewController.swift; sourceTree = "<group>"; };
+		CF88B8341F55FD3300EF43C3 /* InputBillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputBillsViewController.swift; sourceTree = "<group>"; };
 		CFF0E9A31F48DD7B00770D70 /* SplitBills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitBills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF0E9A61F48DD7B00770D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF0E9A81F48DD7B00770D70 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +62,13 @@
 			children = (
 				CFF0E9A61F48DD7B00770D70 /* AppDelegate.swift */,
 				CFF0E9A81F48DD7B00770D70 /* HomePageViewController.swift */,
+				CF88B8301F55FB1100EF43C3 /* NameBillViewController.swift */,
+				CF88B8321F55FC9800EF43C3 /* InputPeopleViewController.swift */,
 				CFF0E9AA1F48DD7B00770D70 /* Main.storyboard */,
 				CFF0E9AD1F48DD7B00770D70 /* Assets.xcassets */,
 				CFF0E9AF1F48DD7B00770D70 /* LaunchScreen.storyboard */,
 				CFF0E9B21F48DD7B00770D70 /* Info.plist */,
+				CF88B8341F55FD3300EF43C3 /* InputBillsViewController.swift */,
 			);
 			path = SplitBills;
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF88B8311F55FB1100EF43C3 /* NameBillViewController.swift in Sources */,
 				CFF0E9A91F48DD7B00770D70 /* HomePageViewController.swift in Sources */,
+				CF88B8331F55FC9800EF43C3 /* InputPeopleViewController.swift in Sources */,
+				CF88B8351F55FD3300EF43C3 /* InputBillsViewController.swift in Sources */,
 				CFF0E9A71F48DD7B00770D70 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,7 @@
 				CFF0E9B71F48DD7B00770D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
