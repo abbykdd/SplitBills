@@ -220,8 +220,6 @@
                     </view>
                     <connections>
                         <outlet property="display" destination="C3f-4f-Gab" id="pSE-vb-rgG"/>
-                        <outlet property="touchDIgits" destination="knZ-DV-ad7" id="3Zq-lN-7Re"/>
-                        <outlet property="touchDigits" destination="knZ-DV-ad7" id="VTF-bH-MYl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -414,7 +412,7 @@
         <!--Name Bill View Controller-->
         <scene sceneID="gej-Tf-8yX">
             <objects>
-                <viewController id="7VP-m4-xHQ" customClass="NameBillViewController" sceneMemberID="viewController">
+                <viewController id="7VP-m4-xHQ" customClass="NameBillViewController" customModule="SplitBills" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ElV-ZO-kro"/>
                         <viewControllerLayoutGuide type="bottom" id="SIG-7L-43q"/>
@@ -464,6 +462,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.91977471113204956" green="0.62203246355056763" blue="0.61893260478973389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="billNameTextField" destination="i5L-IG-D8f" id="ahO-8g-1OU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgG-3q-3ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
