@@ -13,5 +13,5 @@ let appManager = AppManager()
 class AppManager : NSObject {
     var billName = ""
     var numberOfPeople = 0
-    var billArray = Array<Int>()
+    var billArray = Array<Double>()
 }

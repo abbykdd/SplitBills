@@ -22,14 +22,7 @@ class InputPeopleViewController: UIViewController {
             userIsMiddleOfTyping = true
         }
     }
-    var displayValue: Double{
-        get {
-            return Double(display.text!)!
-        }
-        set {
-            display.text = String(newValue)
-        }
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
