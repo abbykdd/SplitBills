@@ -10,6 +10,7 @@ import UIKit
 
 class InputBillsViewController: UIViewController {
     var userIsMiddleOfTyping = false
+    
     @IBOutlet weak var billDisplay: UILabel!
     
     @IBAction func beforOrAfterTac(_ sender: UIButton) {

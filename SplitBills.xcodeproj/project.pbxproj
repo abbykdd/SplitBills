@@ -11,6 +11,9 @@
 		CF95954D1F58D17F00D108B5 /* NameBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95954C1F58D17F00D108B5 /* NameBillViewController.swift */; };
 		CF95954F1F58D50600D108B5 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95954E1F58D50600D108B5 /* AppManager.swift */; };
 		CF9595531F58E1F000D108B5 /* InputBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9595521F58E1F000D108B5 /* InputBillsViewController.swift */; };
+		CF9595551F5927B700D108B5 /* CurrentBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9595541F5927B700D108B5 /* CurrentBillsViewController.swift */; };
+		CF9595581F592BFA00D108B5 /* BillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9595561F592BFA00D108B5 /* BillTableViewCell.swift */; };
+		CF9595591F592BFA00D108B5 /* BillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9595571F592BFA00D108B5 /* BillTableViewCell.xib */; };
 		CFF0E9A71F48DD7B00770D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0E9A61F48DD7B00770D70 /* AppDelegate.swift */; };
 		CFF0E9A91F48DD7B00770D70 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0E9A81F48DD7B00770D70 /* HomePageViewController.swift */; };
 		CFF0E9AC1F48DD7B00770D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF0E9AA1F48DD7B00770D70 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		CF95954C1F58D17F00D108B5 /* NameBillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameBillViewController.swift; path = ../NameBillViewController.swift; sourceTree = "<group>"; };
 		CF95954E1F58D50600D108B5 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		CF9595521F58E1F000D108B5 /* InputBillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputBillsViewController.swift; sourceTree = "<group>"; };
+		CF9595541F5927B700D108B5 /* CurrentBillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentBillsViewController.swift; sourceTree = "<group>"; };
+		CF9595561F592BFA00D108B5 /* BillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillTableViewCell.swift; path = ../BillTableViewCell.swift; sourceTree = "<group>"; };
+		CF9595571F592BFA00D108B5 /* BillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BillTableViewCell.xib; path = ../BillTableViewCell.xib; sourceTree = "<group>"; };
 		CFF0E9A31F48DD7B00770D70 /* SplitBills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitBills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF0E9A61F48DD7B00770D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF0E9A81F48DD7B00770D70 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 		CFF0E9A51F48DD7B00770D70 /* SplitBills */ = {
 			isa = PBXGroup;
 			children = (
+				CF9595561F592BFA00D108B5 /* BillTableViewCell.swift */,
+				CF9595571F592BFA00D108B5 /* BillTableViewCell.xib */,
 				CF9595521F58E1F000D108B5 /* InputBillsViewController.swift */,
 				CF95954C1F58D17F00D108B5 /* NameBillViewController.swift */,
 				CFF0E9A61F48DD7B00770D70 /* AppDelegate.swift */,
@@ -69,6 +77,7 @@
 				CFF0E9A81F48DD7B00770D70 /* HomePageViewController.swift */,
 				CF88B8321F55FC9800EF43C3 /* InputPeopleViewController.swift */,
 				CFF0E9AA1F48DD7B00770D70 /* Main.storyboard */,
+				CF9595541F5927B700D108B5 /* CurrentBillsViewController.swift */,
 				CFF0E9AD1F48DD7B00770D70 /* Assets.xcassets */,
 				CFF0E9AF1F48DD7B00770D70 /* LaunchScreen.storyboard */,
 				CFF0E9B21F48DD7B00770D70 /* Info.plist */,
@@ -136,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9595591F592BFA00D108B5 /* BillTableViewCell.xib in Resources */,
 				CFF0E9B11F48DD7B00770D70 /* LaunchScreen.storyboard in Resources */,
 				CFF0E9AE1F48DD7B00770D70 /* Assets.xcassets in Resources */,
 				CFF0E9AC1F48DD7B00770D70 /* Main.storyboard in Resources */,
@@ -149,10 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9595581F592BFA00D108B5 /* BillTableViewCell.swift in Sources */,
 				CF9595531F58E1F000D108B5 /* InputBillsViewController.swift in Sources */,
 				CF95954D1F58D17F00D108B5 /* NameBillViewController.swift in Sources */,
 				CFF0E9A91F48DD7B00770D70 /* HomePageViewController.swift in Sources */,
 				CF88B8331F55FC9800EF43C3 /* InputPeopleViewController.swift in Sources */,
+				CF9595551F5927B700D108B5 /* CurrentBillsViewController.swift in Sources */,
 				CF95954F1F58D50600D108B5 /* AppManager.swift in Sources */,
 				CFF0E9A71F48DD7B00770D70 /* AppDelegate.swift in Sources */,
 			);

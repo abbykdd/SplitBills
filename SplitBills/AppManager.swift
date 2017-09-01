@@ -14,4 +14,6 @@ class AppManager : NSObject {
     var billName = ""
     var numberOfPeople = 0
     var billArray = Array<Double>()
+    
+    
 }
