@@ -32,7 +32,7 @@ class CurrentBillsViewController: UIViewController, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = self.billsTableView.dequeueReusableCell(withIdentifier: "BillTableViewCell", for: indexPath) as! BillTableViewCell
         cell.priceOfTheBill.text = String(appManager.billArray[indexPath.row])
-        cell.nameOfTheBill.text = String(appManager.billArray[indexPath.row])
+        cell.nameOfTheBill.text = appManager.billNameAry[indexPath.row]
         
         return cell
     }

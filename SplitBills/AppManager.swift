@@ -11,9 +11,10 @@ import Foundation
 let appManager = AppManager()
 
 class AppManager : NSObject {
-    var billName = ""
+    var activityName = ""
     var numberOfPeople = 0
     var billArray = Array<Double>()
+    var billNameAry = Array<String>()
     
     
 }

@@ -11,22 +11,10 @@ import UIKit
 class InputBillsViewController: UIViewController {
     var userIsMiddleOfTyping = false
     
-    @IBOutlet weak var billDisplay: UILabel!
-    
-    @IBAction func beforOrAfterTac(_ sender: UIButton) {
-    }
 
+    @IBOutlet weak var nameOfBill: UITextField!
+    @IBOutlet weak var amountOfBill: UITextField!
     
-    @IBAction func touchDigits(_ sender: UIButton) {
-        let digit = sender.currentTitle!
-        if userIsMiddleOfTyping == true{
-            let textCurrentlyDisplay = billDisplay.text!
-            billDisplay.text = textCurrentlyDisplay + digit
-        }else{
-            billDisplay.text = digit
-            userIsMiddleOfTyping = true
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +29,10 @@ class InputBillsViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if (self.billDisplay.text != nil){
-            appManager.billArray.append(Double(self.billDisplay.text!)!)
-        }else{
-            
+        appManager.billArray.append(Double(self.amountOfBill.text!)!)
+        appManager.billNameAry.append(self.nameOfBill.text!)
         }
-    }
+}
     
 
     /*
@@ -59,4 +45,4 @@ class InputBillsViewController: UIViewController {
     }
     */
 
-}
+

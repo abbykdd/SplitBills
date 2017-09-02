@@ -12,6 +12,8 @@ class NameBillViewController: UIViewController {
 
     @IBOutlet weak var billNameTextField: UITextField!
 
+    @IBOutlet weak var numberOfPeopleTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,14 +25,14 @@ class NameBillViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        let billName = self.billNameTextField.text!
-        appManager.billName = billName
-        print(billName)
+    @IBAction func createButtonClicked(_ sender: UIButton) {
+        let activityName = self.billNameTextField.text!
+        let numPeople = Int(self.numberOfPeopleTextField.text!)
+        appManager.numberOfPeople = numPeople!
+        appManager.activityName = activityName
+        //print(billName)
     }
+
 
     
     
