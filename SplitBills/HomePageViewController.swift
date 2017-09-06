@@ -18,6 +18,11 @@ class HomePageViewController: UIViewController,UITableViewDataSource {
         self.activityNameTableView.register(UINib.init(nibName: "ActivityNameTableViewCell",bundle:nil),forCellReuseIdentifier: "ActivityNameTableViewCell")
         self.activityNameTableView.dataSource = self
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.activityNameTableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -25,14 +30,14 @@ class HomePageViewController: UIViewController,UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 10
+            return appManager.activitiesDict.keys.count
     
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.activityNameTableView.dequeueReusableCell(withIdentifier:"ActivityNameTableViewCell",for:indexPath) as! ActivityNameTableViewCell
-        cell.nameOfTheActivity.text = appManager.activityName
-        
+        let keyArray = [String] (appManager.activitiesDict.keys)
+        cell.nameOfTheActivity.text = keyArray[indexPath.row]
         return cell
     }
 

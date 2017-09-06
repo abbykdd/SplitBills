@@ -27,11 +27,16 @@ class InputBillsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        appManager.billArray.append(Double(self.amountOfBill.text!)!)
-        appManager.billNameAry.append(self.nameOfBill.text!)
-        }
+    @IBAction func addButtonIsClicked(_ sender: UIButton) {
+        var activityObject = appManager.activitiesDict[appManager.currentActivity]
+        activityObject?.billArray.append(Double(self.amountOfBill.text!)!)
+        activityObject?.billNameArry.append(self.nameOfBill.text!)
+        
+//        appManager.billArray.append(Double(self.amountOfBill.text!)!)
+//        appManager.billNameAry.append(self.nameOfBill.text!)
+        
+    }
+
 }
     
 

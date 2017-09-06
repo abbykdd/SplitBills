@@ -27,10 +27,13 @@ class NameBillViewController: UIViewController {
     
     @IBAction func createButtonClicked(_ sender: UIButton) {
         let activityName = self.billNameTextField.text!
-        let numPeople = Int(self.numberOfPeopleTextField.text!)
-        appManager.numberOfPeople = numPeople!
-        appManager.activityName = activityName
-        //print(billName)
+        guard let numPeople = Int(self.numberOfPeopleTextField.text!) else {
+            print("bad numPeople")
+            return
+        }
+        var activity = ActivityModel(activityName, numPeople)
+        appManager.activitiesDict[activityName] = activity
+        appManager.currentActivity = activityName
     }
 
 

@@ -50,16 +50,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-xw-8pF">
-                                <rect key="frame" x="41" y="285" width="230" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-xw-8pF">
+                                <rect key="frame" x="41" y="285" width="152" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnX-4T-2vY">
-                                <rect key="frame" x="118" y="196" width="84" height="40"/>
-                                <state key="normal" title="Current bills"/>
+                                <rect key="frame" x="219" y="285" width="48" height="30"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
+                                    <action selector="addButtonIsClicked:" destination="5c5-6g-OQZ" eventType="touchUpInside" id="17K-G2-4JT"/>
                                     <segue destination="vgX-GD-kC6" kind="show" id="GIt-oq-0sZ"/>
                                 </connections>
                             </button>
@@ -89,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83a-f4-DXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3591" y="146"/>
+            <point key="canvasLocation" x="3590.625" y="145.77464788732394"/>
         </scene>
         <!--Current Bills View Controller-->
         <scene sceneID="Wfg-vU-usz">
@@ -292,6 +293,6 @@
         <image name="Back" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GIt-oq-0sZ"/>
+        <segue reference="og9-tg-Ac0"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,17 +26,18 @@ class CurrentBillsViewController: UIViewController, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return appManager.billArray.count
+        return (appManager.activitiesDict[appManager.currentActivity]?.billArray.count)!
+//        return appManager.billArray.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = self.billsTableView.dequeueReusableCell(withIdentifier: "BillTableViewCell", for: indexPath) as! BillTableViewCell
-        cell.priceOfTheBill.text = String(appManager.billArray[indexPath.row])
-        cell.nameOfTheBill.text = appManager.billNameAry[indexPath.row]
+        //bill = appManager.activitiesDict[appManager.currentActivity]?.billArray[indexPath.row]
+        cell.priceOfTheBill.text = String(describing: appManager.activitiesDict[appManager.currentActivity]!.billArray[indexPath.row])
+        cell.nameOfTheBill.text = appManager.activitiesDict[appManager.currentActivity]?.billNameArry[indexPath.row]
         
         return cell
     }
-    
 
     /*
     // MARK: - Navigation
